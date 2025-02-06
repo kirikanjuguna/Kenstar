@@ -1,3 +1,148 @@
 /*
 Custom Css
 */
+/* Styling for the Banner hero section for background */
+.banner-slide {
+    height: 100vh; /* Full-screen height */
+    background-size: cover; /* Cover the entire section */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    position: relative;
+}
+
+.banner-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Optional: Dark overlay for better text visibility */
+}
+
+.banner-slide .container {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+/* Basic styling for the product cards and slider */
+#kenstar-featured-products {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f7f7f7; /* Light grey background */
+}
+
+#featured-products-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #282460; /* Blue color */
+}
+
+#featured-products-description {
+    color: #818385; /* Grey color */
+    font-size: 1.2rem;
+}
+
+/* Slider container */
+.kenstar-product-slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.kenstar-slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.kenstar-product-card {
+    flex: 0 0 33.33%; /* Adjust based on number of visible items */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.kenstar-product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.kenstar-product-info {
+    padding: 15px;
+    background-color: #ffffff; /* White background for product info */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kenstar-product-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #282460; /* Blue color */
+}
+
+.kenstar-product-description {
+    color: #818385; /* Grey color */
+    font-size: 14px;
+}
+
+/* Minimalistic Navigation Arrows */
+.kenstar-slider-nav-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 15px;
+    z-index: 10;
+}
+
+.kenstar-slider-nav {
+    background: none;
+    border: none;
+    color: #282460; /* Blue color for arrows */
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.kenstar-slider-nav span {
+    font-size: 2rem; /* Adjust font size for minimalistic look */
+}
+
+/* Hover effect for arrows */
+.kenstar-slider-nav:hover {
+    color: #ed1c24; /* Red color on hover */
+}
+
+/* Adding a hover effect to the product card */
+.kenstar-product-card:hover .kenstar-product-image {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease;
+}
+
+.kenstar-product-card:hover .kenstar-product-info {
+    background-color: #f4f4f4; /* Light grey background on hover */
+}
+
+/* Adding a responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .kenstar-product-card {
+        flex: 0 0 50%; /* Two items per row on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .kenstar-product-card {
+        flex: 0 0 100%; /* One item per row on very small screens */
+    }
+}
+
+
+/* End of custom.css */
