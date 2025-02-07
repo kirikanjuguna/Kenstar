@@ -37,7 +37,7 @@ Custom Css
 
 #featured-products-title {
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 600 !important;
     color: #282460; /* Blue color */
 }
 
@@ -80,7 +80,7 @@ Custom Css
 
 .kenstar-product-title {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bold !important;/*Making sure the are bold they were acting up*/
     text-decoration: none;
     color: #282460; /* Blue color */
 }
