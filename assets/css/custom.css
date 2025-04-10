@@ -1,6 +1,53 @@
 /*
 Custom Css
 */
+
+/*For category menu*/
+/* Styling the category title */
+#featured-products-title {
+    color: #282460; /* Main theme color */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Styling the category links */
+.category-link {
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px; /* Reduced font size */
+    font-weight: 700; /* Medium bold */
+}
+
+/* Hover effects */
+.category-link:hover {
+    background-color: #ed1c24; /* Hover background */
+    color: white; /* Change text color on hover */
+}
+
+/* Styling the accordion list */
+.templatemo-accordion {
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Styling the list items */
+.templatemo-accordion li {
+    list-style: none;
+}
+
+/* Adding some padding and margin for spacing */
+.pb-3 {
+    padding-bottom: 20px;
+}
+
+/*End category menu*/
+
 /* Styling for the Banner hero section for background */
 
 .banner-slide {
